@@ -1,0 +1,24 @@
+﻿@model List<BetterReviews.Controllers.Business.ViewModels.BusinessViewModel>
+
+@if (HttpContext.Current.User.Identity.IsAuthenticated)
+{
+    <div>
+        @Html.ActionLink("Add Business", "add", "business", null, new { @class = "btn btn-default" })
+    </div>
+}
+
+    <!-- Featured Businesses Heading -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Featured Businesses</h1>
+            <div class="border-top border-primary"></div>
+            <p class="lead text-center">Waiting For Your Next Review</p>
+        </div>
+    </div>
+
+    <ul>
+        @foreach (var x in Model)
+        {
+            <li>@Html.ActionLink(x.Name, "detail", new { id = x.BusinessId })</li>
+        }
+    </ul>

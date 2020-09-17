@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9b43016d3281414b8c434055653a1bf8" Name="Diagram1">
+        <EntityTypeShape EntityType="BetterReviewsModel.Address" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BetterReviewsModel.AspNetRole" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BetterReviewsModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BetterReviewsModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BetterReviewsModel.AspNetUser" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BetterReviewsModel.Business" Width="1.5" PointX="7.5" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BetterReviewsModel.BusinessCategory" Width="1.5" PointX="5.25" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BetterReviewsModel.BusinessReview" Width="1.5" PointX="9.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="BetterReviewsModel.ReviewReponse" Width="1.5" PointX="5.25" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BetterReviewsModel.UserProfile" Width="1.5" PointX="5.25" PointY="11.625" IsExpanded="true" />
+        <AssociationConnector Association="BetterReviewsModel.FK_Business_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_UserProfiles_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_Business_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_Business_AspNetUsers1" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_BusinessCategoryName_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_BusinessCategoryName_AspNetUsers1" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_BusinessReview_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_BusinessReview_AspNetUsers1" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_BusinessReview_AspNetUsers2" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_ReviewReponse_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_UserProfiles_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_Business_BusinessCategoryName" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_BusinessReview_Business" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.FK_BusinessReview_ReviewReponse" ManuallyRouted="false" />
+        <AssociationConnector Association="BetterReviewsModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

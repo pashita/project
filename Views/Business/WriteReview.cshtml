@@ -1,0 +1,28 @@
+﻿@model BetterReviews.Controllers.Business.ViewModels.WriteReviewViewModel
+
+<h1>Write Review</h1>
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="form-group col-md-2">
+            @Html.LabelFor(m => m.Rating)
+            @Html.DropDownListFor(m => m.Rating, Model.RatingOptions, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Rating, null, new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-6">
+            @Html.LabelFor(m => m.Review)
+            @Html.TextAreaFor(m => m.Review, new { @class = "form-control", rows = "6" })
+            @Html.ValidationMessageFor(m => m.Review, null, new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @Html.HiddenFor(x => x.BusinessId)
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-default">Save Review</button>
+    </div>    
+}

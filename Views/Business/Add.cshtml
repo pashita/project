@@ -1,0 +1,70 @@
+﻿@model BetterReviews.Controllers.Business.ViewModels.AddBusinessViewModel
+
+<h1>Add a new business</h1>
+
+@using (Html.BeginForm())
+{
+    <div class="row col-md-4">
+        <div class="form-group">
+            @Html.LabelFor(m => m.BusinessName)
+            @Html.TextBoxFor(m => m.BusinessName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.BusinessName, null, new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.BusinessName, "Business Category")
+            @Html.DropDownListFor(m => m.BusinessCategoryId, Model.BusinessCategories, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.BusinessCategoryId, null, new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Address)
+            @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Address, null, new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.City)
+            @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.City, null, new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.State)
+            @Html.TextBoxFor(m => m.State, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.State, null, new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.ZipCode)
+            @Html.TextBoxFor(m => m.ZipCode, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.ZipCode, null, new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Country)
+            @Html.TextBoxFor(m => m.Country, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Country, null, new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.PhoneNumber)
+            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.PhoneNumber, null, new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.WebsiteAddress)
+            @Html.TextBoxFor(m => m.WebsiteAddress, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.EmailAddress)
+            @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-default">Add Business</button>
+        </div>    
+    </div>
+}
